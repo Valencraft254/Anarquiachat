@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AnarquiaChat</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FONDO -->
+
+<div class="background-glow"></div>
+
+<!-- LOGIN -->
+
+<div class="login-screen" id="loginScreen">
+
+    <div class="login-box">
+
+        <div class="logo">
+            💬
+        </div>
+
+        <h1>AnarquiaChat</h1>
+
+        <p>
+            Chat global anónimo en tiempo real
+        </p>
+
+        <input 
+        type="text" 
+        id="nameInput"
+        placeholder="Ingresa tu nombre">
+
+        <button id="enterBtn">
+            Entrar al chat
+        </button>
+
+    </div>
+
+</div>
+
+<!-- CHAT -->
+
+<div class="chat-screen hidden" id="chatScreen">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="server-icon active">
+                💬
+            </div>
+
+            <div class="server-icon">
+                🔥
+            </div>
+
+            <div class="server-icon">
+                🌎
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="main-chat">
+
+        <!-- TOPBAR -->
+
+        <div class="topbar">
+
+            <div class="topbar-left">
+
+                <div class="online-dot"></div>
+
+                <h2>
+                    AnarquiaChat
+                </h2>
+
+            </div>
+
+            <div class="user-info" id="userInfo">
+                Usuario
+            </div>
+
+        </div>
+
+        <!-- MENSAJES -->
+
+        <div class="messages" id="messages">
+
+        </div>
+
+        <!-- INPUT -->
+
+        <div class="input-area">
+
+            <input 
+            type="text"
+            id="messageInput"
+            placeholder="Enviar mensaje...">
+
+            <button id="sendBtn">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
